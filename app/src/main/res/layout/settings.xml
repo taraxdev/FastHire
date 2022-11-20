@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".settings">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_marginStart="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="SETTINGS"/>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="vertical">
+            <!-- Profile -->
+            <LinearLayout
+                android:id="@+id/settingsProfile"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackgroundBorderless">
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/name_vector"
+                    android:layout_gravity="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Profile"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/black"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="15dp"/>
+            </LinearLayout>
+            <!-- Posts -->
+            <LinearLayout
+                android:id="@+id/settingsPost"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/image_vector" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="My Posts"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="15dp"/>
+            </LinearLayout>
+            <!-- Filter -->
+            <LinearLayout
+                android:id="@+id/settingsFilter"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/filter_vector" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Filter"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="15dp"/>
+            </LinearLayout>
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Coming soon..."-->
+<!--                android:textColor="@android:color/black"-->
+<!--                android:textSize="20sp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginTop="10dp"/>-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:clickable="true"-->
+<!--                android:focusable="true"-->
+<!--                android:background="?attr/selectableItemBackground">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="35dp"-->
+<!--                    android:layout_height="35dp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:background="@drawable/time_vector" />-->
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Buy tools"-->
+<!--                    android:textColor="@android:color/black"-->
+<!--                    android:textSize="20sp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginStart="15dp"/>-->
+<!--            </LinearLayout>-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:clickable="true"-->
+<!--                android:focusable="true"-->
+<!--                android:background="?attr/selectableItemBackground">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="35dp"-->
+<!--                    android:layout_height="35dp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:background="@drawable/time_vector" />-->
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Benifit card"-->
+<!--                    android:textColor="@android:color/black"-->
+<!--                    android:textSize="20sp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginStart="15dp"/>-->
+<!--            </LinearLayout>-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:clickable="true"-->
+<!--                android:focusable="true"-->
+<!--                android:background="?attr/selectableItemBackground">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="35dp"-->
+<!--                    android:layout_height="35dp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:background="@drawable/time_vector" />-->
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Worker finance"-->
+<!--                    android:textColor="@android:color/black"-->
+<!--                    android:textSize="20sp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginStart="15dp"/>-->
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:clickable="true"-->
+<!--                android:focusable="true"-->
+<!--                android:background="?attr/selectableItemBackground">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="35dp"-->
+<!--                    android:layout_height="35dp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:background="@drawable/time_vector" />-->
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Worker insurance"-->
+<!--                    android:textColor="@android:color/black"-->
+<!--                    android:textSize="20sp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginStart="15dp"/>-->
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:clickable="true"-->
+<!--                android:focusable="true"-->
+<!--                android:background="?attr/selectableItemBackground">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="35dp"-->
+<!--                    android:layout_height="35dp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:background="@drawable/time_vector" />-->
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Worker membership"-->
+<!--                    android:textColor="@android:color/black"-->
+<!--                    android:textSize="20sp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginStart="15dp"/>-->
+<!--            </LinearLayout>-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Credits"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
+            <Button
+                android:id="@+id/flaticon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Flaticon attribution"
+                android:layout_marginStart="15dp"
+                android:background="@android:color/transparent"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <ProgressBar
+                    android:id="@+id/logoutProgressBar"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:visibility="gone" />
+                <Button
+                    android:id="@+id/logoutbtn"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/postbtn_blackround"
+                    android:text="LOGOUT"
+                    android:layout_marginTop="20dp"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/madeby"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="App build by AKSHAY B"
+                android:layout_gravity="center"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@android:color/holo_blue_light"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

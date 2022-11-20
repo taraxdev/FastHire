@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".postDetails">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Details"
+                    android:textSize="20sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!-- LINK -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/posturl_vector"
+                        android:layout_gravity="center" />
+                    <EditText
+                        android:id="@+id/postImageLink"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Google drive photo url"
+                        android:inputType="textLongMessage"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5dp"/>
+                </LinearLayout>
+                <!-- CAPTION -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/posttext_vector"
+                        android:layout_gravity="center" />
+                    <EditText
+                        android:id="@+id/postCaption"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Caption"
+                        android:inputType="text"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp">
+                    <ImageButton
+                        android:id="@+id/postPreviewButton"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/image_vector"
+                        android:background="@drawable/blueround"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Click here for post preview"
+                        android:layout_gravity="center"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/postPreviewLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/post_background"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:visibility="gone">
+                    <ImageView
+                        android:id="@+id/postShowPic"
+                        android:layout_width="300dp"
+                        android:layout_height="300dp"
+                        android:background="@drawable/loading"
+                        android:layout_marginTop="10dp"/>
+                    <TextView
+                        android:id="@+id/postShowCaption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Discription"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"/>
+                </LinearLayout>
+                <Button
+                    android:id="@+id/postButton"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/postbtn_blackround"
+                    android:text="POST"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

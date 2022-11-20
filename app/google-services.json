@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "866881867778",
+    "firebase_url": "https://original-database.firebaseio.com",
+    "project_id": "original-database",
+    "storage_bucket": "original-database.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:866881867778:android:739b31d5cb44792750d71b",
+        "android_client_info": {
+          "package_name": "com.wtw.waytoworkers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "866881867778-pgvn0cfsebelihmhaep0hfr6pou4cfe1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAl5IJHrvsG7VmH_GzDt8ukQdg6xRIJT_o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "866881867778-pgvn0cfsebelihmhaep0hfr6pou4cfe1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

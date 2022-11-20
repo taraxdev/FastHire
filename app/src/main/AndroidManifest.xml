@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wtw.waytoworkers">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:usesCleartextTraffic="true"
+        android:icon="@mipmap/wtw"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/wtw"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".forgetPassword"></activity>
+        <activity android:name=".phoneVerification" />
+        <activity
+            android:name=".filters"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".flaticonAttribution"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".rateWorker"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".search"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".editProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".recycleviewPost"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".postDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".profile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".signupOrSignin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".showlist"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".workersignup"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".settings"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".department"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".homepage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".signin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usersingup"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".chooseor"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".splash"
+            android:screenOrientation="portrait"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".workerdetailandbook"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>
